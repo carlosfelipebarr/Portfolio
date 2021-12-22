@@ -1,0 +1,354 @@
+/* Importando tipografia Quicksand do Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Configurações gerais para todas as tags do body */
+body {
+  font-family: 'Quicksand', sans-serif;
+}
+
+/* Configurando header do site, com o tamanho */
+header {
+  /* Definindo imagem de fundo para o header */
+  background-image: url("../img/header.jpg");
+  /* Tamanho da imagem de fundo: Cobrindo o header */
+  background-size: cover;
+  position: static;
+  overflow: hidden;
+  height: 50rem;
+}
+
+/* Div da imagem de perfil */
+.perfil {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+/* Configurando tamanho e arredondamento da foto */
+.foto-perfil {
+  width: 140px;
+  height: 140px;
+  border-radius: 100px;
+}
+
+ /* Configurações da div responsável pela apresentação inicial do site, contendo as tag H1, p. com pocisionamento e alinhamento */
+.header-texto {
+  text-align: center;
+  margin: 2rem 0 0 0;
+}
+
+/* Configurando o H1, tamanho, espaçamento entre letras e cor */
+h1 {
+  font-size: 60px;
+  font-style: italic;
+  font-family: fantasy;
+  font-weight: 300;
+  letter-spacing: 10px;
+	color: white;
+}
+
+/* Configurando a tag p, tamanho e cor */
+.header-texto p {
+  font-size: 20px;
+  color: white;
+}
+
+/* Margem dos icones sociais | Alimento ao centro */
+.social-icons {
+  margin-top: 1rem;
+  align-content: center;
+}
+
+/* Posição lado a lado dos icones sociais  */
+.social-icons li {
+	display: flex;
+}
+
+/* Controle dos icones sociais tamanho, posição, duração da transição do efeito do hover | 
+da borda redonda envolta dos icones sociais  */
+.social-icons a {
+  background-color: rgba(192, 192, 192, 0.7);
+	width: 40px;
+	height: 40px;
+  margin: 0 0 0 6px;
+	border-radius: 100%;
+  color: white;
+	font-size: 20px;
+	display: inline-block;
+	line-height: 44px;
+	text-align: center;
+	border-radius: 100%;
+	-webkit-transition: all .2s linear;
+	-o-transition: all .2s linear;
+	transition: all .2s linear;
+}
+
+/* Hover dos icones sociais */
+.social-icons a:hover {
+  color: white;
+	background-color: #0024A4;
+}
+
+/* ------- Configurando a seta de rolagem ------ */
+.seta-svg {
+  color: white;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* ------ Posição do SVG de onda para causar o efeito de recorte ---- */
+.recorte{
+  margin-top: -22rem;
+}
+
+/* -------------  Configurações da sessao-info: -----------------------
+distancia do svg, centralização do texto e cor, tamanho da sessão */
+.sessao-info {
+  background-color: #0024A4;
+  text-align: center;
+  color: white;
+  height: 600px;
+  margin-top: -2rem;
+}
+
+/* Configurando o h2 */
+.sessao-info h2{
+  font-size: 45px;
+  padding-top: 15px;
+}
+
+/* Configurando a tag p  */
+.sessao-info p {
+  width: 80%;
+  font-size: 20px;
+  margin: 0 auto 0 auto; 
+}
+
+.recorte-2 {
+  margin-top: -2rem;
+}
+
+/* ---------------- Configurando a sessao-portfolio ---------------------
+distancia da sessão-2, centralização do texto e cor, tamanho da sessão */
+.sessao-portfolio {
+  text-align: center;
+  background-color: black;
+  color: white;
+  margin-top: -10rem;
+}
+
+/* Configurações das tag <h2> */
+.sessao-portfolio h2 {
+  font-size: 45px;
+  font-style: italic;
+}
+
+.titulo-portfolio {
+  padding-top: 10rem;
+}
+
+/*  Configurações das tag <p> */
+.sessao-portfolio p {
+  font-size: 20px;
+}
+
+.portfolio-imagem {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.projeto h2 {
+  font-size: 25px;
+}
+
+.projeto p {
+  font-size: 18px;
+}
+
+/* Controle dos icones sociais tamanho, posição, duração da transição do efeito do hover | 
+da borda redonda envolta dos icones sociais  */
+.projeto a {
+  color: white;
+  background-color: rgba(70, 70, 70, 0.9662);
+	width: 40px;
+	height: 40px;
+  margin: 0 0 0 6px;
+	border-radius: 100%;
+	font-size: 20px;
+	display: inline-block;
+	line-height: 44px;
+	text-align: center;
+	border-radius: 100%;
+	-webkit-transition: all .2s linear;
+	-o-transition: all .2s linear;
+	transition: all .2s linear;
+}
+
+.projeto a:hover {
+  color: white;
+  background-color: #0024A4;
+}
+
+/* Configurando div responsavél pela galeria de imagens */
+.imagem-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 15px;
+  padding: 10px;
+}
+
+/* Configurando as imagens */
+.imagem-galeria {
+  width: 25rem;
+  height: 20rem;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px 5px rgba(255, 255, 255, 0.055);
+}
+
+.imagem-galeria img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Configurando a sessao-5 */
+.sessao-5 {
+  background-color: #0024A4;
+  height: 90rem;
+}
+
+/* Configurando a sessao-5 h2 */
+.sessao-5 h2 {
+  font-size: 45px;
+  padding-top: 60px;
+}
+
+/* Configurando a sessao-5 p */
+.sessao-5 p {
+  font-size: 20px;
+}
+
+.skill {
+  display: flex;
+  text-align: center;
+  color: white;
+  height: 50%;
+}
+
+.soft-skill, .hard-skill {
+  width: 50%;
+} 
+
+.personalidade {
+  text-align: center;
+  color: white;
+  height: 50%;
+  align-items: center;
+}
+
+.teste-personalidade {
+  width: 50rem;
+  height: 34rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  box-shadow: 5px 10px #000000;
+  margin-left: auto;  
+  margin-right: auto;
+}
+
+.img-personalidade {
+  width: 30rem;
+  height: 18rem;
+  padding: 0;
+  margin: 0;
+}
+
+.teste-personalidade h2 {
+  font-size: 20px;
+  padding-top: 0;
+}
+
+.teste-personalidade p {
+  font-size: 18px;
+}
+
+/* Configurações do rodapé  */
+.rodape {
+	background-color: rgb(65, 65, 65);
+  height: 15rem;
+	font-size: 20px;
+	color: white;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+/* Configuração do rodapé */
+.rodape-container {
+  padding-top: 2rem;
+}
+
+/* Linha divisoria do rodapé */
+hr {
+	width: 50%;
+  opacity: 50%;
+  color: white;
+	margin: 0 auto 0 auto; 
+	}
+
+.rodape-direitos{
+  padding-top: 1rem;
+}
+
+/* Configuração da classe do copyright  */
+.copyright {
+	margin: 0;
+	color: white;
+	font-style: oblique;
+	font-size: 15px;
+  margin-top: 1rem;
+}
+
+/* Configuração da borda redonda envolta dos icones sociais */
+.rodape-direitos .social-icons a {
+  background-color: #6e6e6e;
+	width: 40px;
+	height: 40px;
+  margin: 0 0 0 6px;
+	border-radius: 100%;
+}
+
+
+/*  ------------ CSS3 Animation ----------- */
+
+/* Criando animação: Aparição suave */
+@keyframes fade {
+  /* Ação inicial da animação */
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  /* Ação final da animação */
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Aparição do form suavemente */
+body {
+  /* Aplicando a animação fade | Tempo de execução da animação */
+  animation: fade 1.2s;
+}
+
