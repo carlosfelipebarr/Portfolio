@@ -20,7 +20,7 @@ header {
   background-size: cover;
   position: static;
   overflow: hidden;
-  height: 50rem;
+  height: 40rem;
 }
 
 /* Div da imagem de perfil */
@@ -29,6 +29,15 @@ header {
   justify-content: center;
   margin-top: 2rem;
 }
+
+/* Definições das linhas divisoria  */
+hr {
+	width: 50%;
+  opacity: 50%;
+  color: white;
+	margin: 0 auto 0 auto; 
+	}
+
 
 /* Configurando tamanho e arredondamento da foto */
 .foto-perfil {
@@ -106,9 +115,14 @@ da borda redonda envolta dos icones sociais  */
   cursor: pointer;
 }
 
+.seta-svg:hover {
+  transform: scale(1.2);
+  color: silver;
+}
+
 /* ------ Posição do SVG de onda para causar o efeito de recorte ---- */
 .recorte{
-  margin-top: -22rem;
+  margin-top: -10rem;
 }
 
 /* -------------  Configurações da sessao-info: -----------------------
@@ -117,14 +131,13 @@ distancia do svg, centralização do texto e cor, tamanho da sessão */
   background-color: #0024A4;
   text-align: center;
   color: white;
-  height: 600px;
-  margin-top: -2rem;
+  height: 25rem;
+  margin-top: -1rem;
 }
 
 /* Configurando o h2 */
 .sessao-info h2{
   font-size: 45px;
-  padding-top: 15px;
 }
 
 /* Configurando a tag p  */
@@ -134,8 +147,9 @@ distancia do svg, centralização do texto e cor, tamanho da sessão */
   margin: 0 auto 0 auto; 
 }
 
+/* ------ Posição do SVG de onda para causar o efeito de recorte ---- */
 .recorte-2 {
-  margin-top: -2rem;
+  margin-top: -5rem;
 }
 
 /* ---------------- Configurando a sessao-portfolio ---------------------
@@ -153,6 +167,7 @@ distancia da sessão-2, centralização do texto e cor, tamanho da sessão */
   font-style: italic;
 }
 
+/* Definindo paddaing-top para a tag <h2> da sessão-portfólio */
 .titulo-portfolio {
   padding-top: 10rem;
 }
@@ -223,64 +238,184 @@ da borda redonda envolta dos icones sociais  */
   object-fit: cover;
 }
 
-/* Configurando a sessao-5 */
-.sessao-5 {
+/* Configurando a sessao-skills */
+.sessao-skills {
   background-color: #0024A4;
   height: 90rem;
 }
 
-/* Configurando a sessao-5 h2 */
-.sessao-5 h2 {
+/* Configurando a sessao-skills h2 */
+.sessao-skills h2 {
   font-size: 45px;
   padding-top: 60px;
 }
 
-/* Configurando a sessao-5 p */
-.sessao-5 p {
+/* Configurando a sessao-skills p */
+.sessao-skills p {
   font-size: 20px;
 }
 
-.skill {
+/* Configurações da div hard-skills: Área contendo as informações das hard-skills */
+.hard-skills {
   display: flex;
+  flex-wrap: wrap;
   text-align: center;
   color: white;
-  height: 50%;
 }
 
-.soft-skill, .hard-skill {
+/* Configurações da div soft-skills: Área contendo as informações das soft-skills */
+.soft-skills{
+  display: flex;
+  color: white;
+  text-align: center;
+}
+
+/* Configurações das divs onde ficaram os cards das skills */
+.hard-skill, .formacao, .soft-skill, .personalidade  {
   width: 50%;
 } 
 
-.personalidade {
-  text-align: center;
-  color: white;
-  height: 50%;
-  align-items: center;
-}
-
-.teste-personalidade {
-  width: 50rem;
-  height: 34rem;
-  background-color: rgba(0, 0, 0, 0.5);
+/* Configurações dos cards  */
+.card-hardSkill, .card-formacao , .card-softSkill, .card-personalidade {
+  width: 35rem;
+  height: 32rem;
   border-radius: 20px;
-  box-shadow: 5px 10px #000000;
+  box-shadow: -3px -3px 7px #02084273, 3px 3px 5px rgba(1, 19, 51, 0.29);
   margin-left: auto;  
   margin-right: auto;
 }
 
-.img-personalidade {
-  width: 30rem;
-  height: 18rem;
-  padding: 0;
-  margin: 0;
-}
-
-.teste-personalidade h2 {
+.card-hardSkill p {
   font-size: 20px;
-  padding-top: 0;
 }
 
-.teste-personalidade p {
+/* Configurações dos icones de tecnologias (hard-skills) importadas do Font Awesome */
+.icones-tech a{
+  display: inline-flex;
+  color: white;
+  text-align: center;
+	font-size: 60px;
+  padding: 45px;
+}
+
+/* Definindo cor através da propriedade filter aos icones  */
+.fa-java {
+  filter: invert(24%) sepia(86%) saturate(7466%) hue-rotate(357deg) brightness(94%) contrast(116%);
+}
+
+.fa-html5 {
+  filter: invert(39%) sepia(56%) saturate(1815%) hue-rotate(345deg) brightness(100%) contrast(102%);
+}
+
+.fa-js-square {
+  filter: invert(60%) sepia(97%) saturate(374%) hue-rotate(5deg) brightness(109%) contrast(89%);
+}
+
+.fa-css3-alt {
+  filter: invert(55%) sepia(85%) saturate(415%) hue-rotate(154deg) brightness(90%) contrast(92%);
+}
+
+/* Configurações dos icones de tecnologias (hard-skills) svg local */
+.spring-logo {
+  height: 60px;
+  width: 60px;
+}
+
+.mysql-logo {
+  height: 90px;
+  width: 90px;
+}
+
+/* Configurando o flex para as academias ficarem lado a lado  */
+.academias {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Definindo largura total para cada academia */
+.facul, .tecnico-faetec {
+  width: 50%;
+}
+
+/* Definindo o tamanho da tag <p> */
+.facul p, .tecnico-faetec p, .tecnico-start p {
+  font-size: 16px;
+}
+
+/* Configurações do icone da UFF (hard-skills) svg local */
+.uff-logo {
+  height: 100px;
+  width: 200px;
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(15deg) brightness(102%) contrast(102%);
+}
+
+/* Configurações do icone da Faetec (hard-skills) svg local */
+.faetec-logo {
+  height: 100px;
+  width: 150px;
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(15deg) brightness(102%) contrast(102%);
+}
+
+.tecnico-start {
+  padding-top: -30px;
+  width: 100%;
+}
+
+.start-logo {
+  height: 70px;
+  width: 130px;
+  filter: invert(14%) sepia(86%) saturate(5753%) hue-rotate(276deg) brightness(95%) contrast(127%);
+}
+
+/* Configuração dos certificados <h2> */
+.certificacoes h2 {
+  font-size: 25px;
+  padding-top: 20px;
+}
+
+/* Configuração da div do scrum */
+.scrum {
+  width: 50%;
+}
+
+/* Definindo o tamanho da tag <p> do scrum */
+.scrum p {
+  font-size: 16px;
+}
+
+/* Configuração da logo do scrum */
+.scrumstudy-logo {
+  height: 100px;
+  width: 100px;
+}
+
+/* Configurações do icone da Faetec (hard-skills) svg local */
+.lista-soft ul {
+  list-style: none;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* Definindo distância entre os itens da lista */
+.lista-soft li {
+  margin-top: 5%;
+}
+
+/* Configurações do svg */
+.img-personalidade {
+  width: 100%;
+  height: 15rem;
+}
+
+/* Configurações das tags do card da personalidade  */
+.card-personalidade h2 {
+  font-size: 20px;
+  padding: 0;
+}
+
+/* Definindo tamanho da tag <p> para o card da personalidade */
+.card-personalidade p {
   font-size: 18px;
 }
 
@@ -298,14 +433,6 @@ da borda redonda envolta dos icones sociais  */
 .rodape-container {
   padding-top: 2rem;
 }
-
-/* Linha divisoria do rodapé */
-hr {
-	width: 50%;
-  opacity: 50%;
-  color: white;
-	margin: 0 auto 0 auto; 
-	}
 
 .rodape-direitos{
   padding-top: 1rem;
@@ -327,6 +454,12 @@ hr {
 	height: 40px;
   margin: 0 0 0 6px;
 	border-radius: 100%;
+}
+
+/* Configuração do hover dos botões socias do rodapé */
+.rodape-direitos .social-icons a:hover {
+  color: white;
+  background-color: #0024A4;
 }
 
 
@@ -352,3 +485,39 @@ body {
   animation: fade 1.2s;
 }
 
+
+/* Criando responsividade do site: Otimizando para diferentes resoluções */
+@media screen and (min-width:  3840px) {
+  
+
+}
+
+@media screen and (max-width: 2048px) {
+  
+
+}
+
+@media screen and (max-width: 1920px) {
+  
+
+}
+
+@media screen and (max-width: 1150px) {
+  
+
+}
+
+@media screen and (max-width: 1024px) {
+
+
+}
+
+@media screen and (max-width: 960px) {
+
+
+}
+
+@media screen and (max-width: 500px) {
+
+
+}
