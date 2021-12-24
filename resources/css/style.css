@@ -486,38 +486,355 @@ body {
 }
 
 
-/* Criando responsividade do site: Otimizando para diferentes resoluções */
-@media screen and (min-width:  3840px) {
-  
 
+/* ----------------------------- Criando responsividade do site: -----------------------------
+-----------------------     Otimizando para diferentes resoluções       -----------------------  */
+
+@media screen and (min-width: 3840px) {
+  header {
+    height: 80rem;
+  }
+
+/* Configurando tamanho e arredondamento da foto */
+.foto-perfil {
+  width: 240px;
+  height: 240px;
+  border-radius: 120px;
+}
+
+ /* Configurando o H1: tamanho */
+h1 {
+  font-size: 90px;
+}
+
+/* Configurando a tag p: tamanho */
+.header-texto p {
+  font-size: 60px;
+}
+
+/* ------- Configurando a seta de rolagem ------ */
+.seta-svg {
+  font-size: 80px;
+  margin-top: 5rem;
+}
+
+/* ------ Posição do SVG de onda para causar o efeito de recorte ---- */
+.recorte{
+  margin-top: -30rem;
+}
+
+/* -------------  Configurações da sessao-info: -----------------------
+Tamanho da sessão */
+.sessao-info {
+  height: 30rem;
+}
+
+/* Configurando o h2 */
+.sessao-info h2{
+  font-size: 80px;
+}
+
+/* Configurando a tag p  */
+.sessao-info p {
+  font-size: 40px;
+}
+
+/* ------ Posição do SVG de onda para causar o efeito de recorte ---- */
+.recorte-2 {
+  margin-top: -1rem;
+}
+
+/* ---------------- Configurando a sessao-portfolio ---------------------
+distancia da sessão-portfolio: Margem e padding */
+.sessao-portfolio {
+  padding-top: 5rem;
+  margin-top: -24rem;
+}
+
+/* Configurações das tag <h2> */
+.sessao-portfolio h2 {
+  font-size: 50px;
+}
+
+/*  Configurações das tag <p> */
+.sessao-portfolio p {
+  font-size: 30px;
+}
+
+.projeto h2 {
+  font-size: 40px;
+}
 }
 
 @media screen and (max-width: 2048px) {
-  
-
+  header {
+    height: 50rem;
+  }
+  /* ------ Posição do SVG de onda para causar o efeito de recorte ---- */
+.recorte{
+  margin-top: -15rem;
 }
 
-@media screen and (max-width: 1920px) {
-  
+/* ------ Posição do SVG de onda para causar o efeito de recorte ---- */
+.recorte-2 {
+  margin-top: -7rem;
+}
+}
 
+@media screen and (max-width: 1243px) {
+/* ------ Posição do SVG de onda para causar o efeito de recorte ---- */
+.recorte-2 {
+  margin-top: -1rem;
+}
+
+/* ---------------- Configurando a sessao-portfolio ---------------------
+distancia da sessão-portfolio: Margem e padding */
+.sessao-portfolio {
+  padding-top: 0;
+  margin-top: -8rem;
+}
 }
 
 @media screen and (max-width: 1150px) {
+/* ------ Posição do SVG de onda para causar o efeito de recorte ---- */
+.recorte-2 {
+  margin-top: -1rem;
+}
+
+/* ---------------- Configurando a sessao-portfolio ---------------------
+distancia da sessão-portfolio: Margem e padding */
+.sessao-portfolio {
+  padding-top: 0;
+  margin-top: -7rem;
+}
+
+/* Configurações das divs onde ficaram os cards das skills */
+.hard-skill, .formacao, .soft-skill, .personalidade  {
+  width: 50%;
+} 
+
+.sessao-skills {
+  height: 70rem;
+}
+
+.sessao-skills h2 {
+  font-size: 30px;
+}
+
+/* Configurações dos cards  */
+.card-hardSkill, .card-formacao , .card-softSkill, .card-personalidade {
+  width: 26rem;
+  height: 26rem;
+}
+
+/* Configurando a tag <p> (texto) do card das tecnologias */
+.card-hardSkill p {
+  font-size: 15px;
+}
+
+/*  */
+.icones-tech a {
+  padding: 30px;
+}
+
+/* Definindo o tamanho da tag <p> */
+.facul p, .tecnico-faetec p, .tecnico-start p {
+  font-size: 14px;
+}
+
+/* Configurações do icone da UFF (hard-skills) svg local */
+.uff-logo {
+  height: 50px;
+  width: 100px;
+}
+
+/* Configurações do icone da Faetec (hard-skills) svg local */
+.faetec-logo {
+  height: 50px;
+  width: 75px;
+}
+
+/* Configuração dos certificados <h2> */
+.certificacoes h2 {
+  font-size: 18px;
+  padding-top: 10px;
+}
+
+/* Configuração da div do scrum */
+.scrum {
+  width: 50%;
+}
+
+/* Definindo o tamanho da tag <p> do scrum */
+.scrum p {
+  font-size: 12px;
+}
+
+/* Configuração da logo do scrum */
+.scrumstudy-logo {
+  height: 70px;
+  width: 70px;
+}
+
+/* Configurações das tags do card da personalidade  */
+.card-personalidade h2 {
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+/* Definindo tamanho da tag <p> para o card da personalidade */
+.card-personalidade p {
+  font-size: 14px;
+}
+
+.img-personalidade {
+  height: 12rem;
+}
+}
+
+@media screen and (max-width: 890px) {
+  .sessao-skills {
+    display: block;
+    height: 140rem;
+  }
+
+/* Configurações das divs onde ficaram os cards das skills */
+.hard-skill, .formacao, .soft-skill, .personalidade  {
+  width: 100%;
+} 
+
+.soft-skills {
+  display: block;
+}
+}
+
+@media screen and (max-width: 859px) {
+.sessao-info h2 {
+  font-size: 40px;
+}
+
+/* ---------------- Configurando a sessao-portfolio ---------------------
+distancia da sessão-portfolio: Margem e padding */
+.sessao-portfolio {
+  margin-top: -6rem;
+}
+
+.sessao-portfolio h2 {
+  font-size: 30px;
+}
+
+.projeto h2 {
+  font-size: 25px;
+}
+
+.projeto p {
+  font-size: 15px;
+}
+}
+
+@media screen and (max-width: 731px) {
+.sessao-info h2 {
+    font-size: 35px;
+  }
   
+.sessao-info p {
+    font-size: 18px;
+  }
+
+  /* ---------------- Configurando a sessao-portfolio ---------------------
+distancia da sessão-portfolio: Margem e padding */
+.sessao-portfolio {
+  margin-top: -5rem;
+}
 
 }
 
-@media screen and (max-width: 1024px) {
-
-
+@media screen and (max-width: 603px) {
+.header-texto h1 {
+  font-size: 35px;
 }
 
-@media screen and (max-width: 960px) {
+.sessao-info h2 {
+  font-size: 30px;
+  }
+  
+.sessao-info p {
+  font-size: 16px;
+  }
 
-
+/* ---------------- Configurando a sessao-portfolio ---------------------
+distancia da sessão-portfolio: Margem e padding */
+.sessao-portfolio {
+margin-top: -4rem;
 }
 
-@media screen and (max-width: 500px) {
 
+@media screen and (max-width: 475px) {  
+  .sessao-info p {
+    font-size: 15px;
+    }
+  
+  /* ---------------- Configurando a sessao-portfolio ---------------------
+  distancia da sessão-portfolio: Margem e padding */
+  .sessao-portfolio {
+  margin-top: -3rem;
+  }
+  
+ 
+  
+}
+
+@media screen and (max-width: 425px) {  
+.header-texto h1 {
+ font-size: 27px;
+}
+
+.header-texto p {
+  font-size: 16px;
+}
+
+.imagem-galeria {
+  width: 24rem;
+  height: 20rem;
+}
+
+.sessao-skills {
+  height: 165rem;
+}
+
+.card-hardSkill, .card-formacao , .card-softSkill, .card-personalidade {
+    width: 24rem;
+    height: 33rem;
+}
+}
+
+@media screen and (max-width: 401px) {  
+.imagem-galeria {
+    width: 20rem;
+    height: 20rem;
+  }
+  
+  .card-hardSkill, .card-formacao , .card-softSkill, .card-personalidade {
+      width: 20rem;
+      height: 33rem;
+  }
+  }
+
+@media screen and (max-width: 355px) {  
+.sessao-info {
+  height: 30rem;
+} 
+ 
+  .sessao-info p {
+    font-size: 14px;
+    }
+
+  /* ---------------- Configurando a sessao-portfolio ---------------------
+distancia da sessão-portfolio: Margem e padding */
+.sessao-portfolio {
+  margin-top: -2rem;
+}
+}
 
 }
