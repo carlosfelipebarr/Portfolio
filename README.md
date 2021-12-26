@@ -1,2 +1,4 @@
 # Portfolio
-Site Front-End para mostrar meu portfólio portfólio profissional e acadêmico além de apresentar mais de quem sou.
+
+
+Site HTML5, CSS3 para mostrar meu portfólio profissional e acadêmico.Apresentando também mais informações de quem sou.
