@@ -520,6 +520,29 @@ da borda redonda envolta dos icones sociais  */
   font-size: 18px;
 }
 
+/* Criando o style do botão de voltar ao topo */
+#btn-top {
+  background-color: #06001b;
+  border-radius: 80%;
+  border: none;
+  box-shadow: 2px 3px 19px -2px rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  bottom: 14px;
+  right: 22px;
+  z-index: 3;
+}
+
+#btn-top:hover {
+  transform: scale(1.2);
+}
+
+button .fa-arrow-up {
+  color: white;
+}
+
 /* Configurações do rodapé  */
 .rodape {
 	background-color: rgb(65, 65, 65);
