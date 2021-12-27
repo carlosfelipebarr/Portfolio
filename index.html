@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Felipe Barreto | Portfólio</title>
+  <title>Carlos Felipe Barreto | Portfólio</title>
   <!-- Meta criado para descrição e palavras chave para navegador -->
   <meta name="description" content="Meu portfólio, contendo meu CV de tecnologia TI com alguns projetos e um pouco mais de quem sou. | Clique e leia mais!">
    <!-- Linkando o favicon do site -->
@@ -15,8 +15,26 @@
   <script src="https://kit.fontawesome.com/3b7e70bcc5.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <!-- Construido header da página, com apresentação do time -->
+  <!-- Construido header da página coom apresentação e links para contato-->
   <header>	
+    <!-- Construido o menu do site -->
+    <div id="menu-bar">
+      <div id="menu" onclick="onClickMenu()">
+        <div id="bar1" class="bar"></div>
+        <div id="bar2" class="bar"></div>
+        <div id="bar3" class="bar"></div>
+      </div>
+
+      <ul class="nav" id="nav">
+        <li><a href="#sessao-info">Sobre mim</a></li>
+        <li><a href="#sessao-portfolio">Portfolio</a></li>
+        <li><a href="#sessao-skills">Skills</a></li>
+        <li><a href="https://drive.google.com/file/d/1EU88DN0bBiBMCODDzlf4KlIaOUX5W93_/view?usp=sharing">Currículo</a></li>
+      </ul>
+
+    </div>
+    <div class="menu-bg" id="menu-bg"></div>
+    <!-- Header -->
     <div class="perfil">
       <img  class="foto-perfil" src="resources/img/Minha-foto.jpg" alt="Felipe Barreto" />
     </div>
@@ -27,9 +45,8 @@
       <ul class="social-icons">
         <a href="https://github.com/felipecarvalhobarr" target="_black"><i class="fab fa-github"></i></a> 
         <a href="https://www.linkedin.com/in/felipecarvbarr/" target="_black"><i class="fab fa-linkedin-in"></i></a> 
-        <a href="https://www.linkedin.com/in/felipecarvbarr/" target="_black"><i class="fas fa-envelope"></i></a> 
-        <a href="https://www.linkedin.com/in/felipecarvbarr/" target="_black"><i class="fab fa-instagram"></i></a> 
-        <a href="https://www.linkedin.com/in/felipecarvbarr/" target="_black"><i class="fab fa-whatsapp"></i></a> 
+        <a href="mailto:felipecarvalhobarr@gmail.com" target="_black"><i class="fas fa-envelope"></i></a> 
+        <a href="https://api.whatsapp.com/send?phone=5521983288139" target="_black"><i class="fab fa-whatsapp"></i></a> 
       </ul>
     </div>
     <a class="seta-svg" href="#sessao-info"><i class="fas fa-arrow-alt-circle-down"></i></a> 
@@ -45,7 +62,7 @@
     <br>
     <div id="chart_div"></div>
   </section>
-  <!-- SVG para dar efeito de recorte branco na sessão 2 para a sessão 3 -->
+  <!-- SVG para dar efeito de recorte -->
   <svg class="recorte-2" id="wave" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 180" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(0, 36, 164, 1)" offset="0%"></stop><stop stop-color="rgba(0, 0, 0, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,144L80,141C160,138,320,132,480,117C640,102,800,78,960,63C1120,48,1280,42,1440,33C1600,24,1760,12,1920,18C2080,24,2240,48,2400,75C2560,102,2720,132,2880,141C3040,150,3200,138,3360,120C3520,102,3680,78,3840,66C4000,54,4160,54,4320,48C4480,42,4640,30,4800,21C4960,12,5120,6,5280,30C5440,54,5600,108,5760,135C5920,162,6080,162,6240,147C6400,132,6560,102,6720,84C6880,66,7040,60,7200,69C7360,78,7520,102,7680,120C7840,138,8000,150,8160,150C8320,150,8480,138,8640,114C8800,90,8960,54,9120,33C9280,12,9440,6,9600,21C9760,36,9920,72,10080,99C10240,126,10400,144,10560,144C10720,144,10880,126,11040,123C11200,120,11360,132,11440,138L11520,144L11520,180L11440,180C11360,180,11200,180,11040,180C10880,180,10720,180,10560,180C10400,180,10240,180,10080,180C9920,180,9760,180,9600,180C9440,180,9280,180,9120,180C8960,180,8800,180,8640,180C8480,180,8320,180,8160,180C8000,180,7840,180,7680,180C7520,180,7360,180,7200,180C7040,180,6880,180,6720,180C6560,180,6400,180,6240,180C6080,180,5920,180,5760,180C5600,180,5440,180,5280,180C5120,180,4960,180,4800,180C4640,180,4480,180,4320,180C4160,180,4000,180,3840,180C3680,180,3520,180,3360,180C3200,180,3040,180,2880,180C2720,180,2560,180,2400,180C2240,180,2080,180,1920,180C1760,180,1600,180,1440,180C1280,180,1120,180,960,180C800,180,640,180,480,180C320,180,160,180,80,180L0,180Z"></path><defs><linearGradient id="sw-gradient-1" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(0, 36, 164, 1)" offset="0%"></stop><stop stop-color="rgba(0, 0, 0, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 50px); opacity:0.9" fill="url(#sw-gradient-1)" d="M0,36L80,54C160,72,320,108,480,105C640,102,800,60,960,39C1120,18,1280,18,1440,36C1600,54,1760,90,1920,105C2080,120,2240,114,2400,105C2560,96,2720,84,2880,72C3040,60,3200,48,3360,63C3520,78,3680,120,3840,126C4000,132,4160,102,4320,75C4480,48,4640,24,4800,33C4960,42,5120,84,5280,93C5440,102,5600,78,5760,78C5920,78,6080,102,6240,120C6400,138,6560,150,6720,153C6880,156,7040,150,7200,135C7360,120,7520,96,7680,96C7840,96,8000,120,8160,114C8320,108,8480,72,8640,63C8800,54,8960,72,9120,90C9280,108,9440,126,9600,135C9760,144,9920,144,10080,129C10240,114,10400,84,10560,60C10720,36,10880,18,11040,30C11200,42,11360,84,11440,105L11520,126L11520,180L11440,180C11360,180,11200,180,11040,180C10880,180,10720,180,10560,180C10400,180,10240,180,10080,180C9920,180,9760,180,9600,180C9440,180,9280,180,9120,180C8960,180,8800,180,8640,180C8480,180,8320,180,8160,180C8000,180,7840,180,7680,180C7520,180,7360,180,7200,180C7040,180,6880,180,6720,180C6560,180,6400,180,6240,180C6080,180,5920,180,5760,180C5600,180,5440,180,5280,180C5120,180,4960,180,4800,180C4640,180,4480,180,4320,180C4160,180,4000,180,3840,180C3680,180,3520,180,3360,180C3200,180,3040,180,2880,180C2720,180,2560,180,2400,180C2240,180,2080,180,1920,180C1760,180,1600,180,1440,180C1280,180,1120,180,960,180C800,180,640,180,480,180C320,180,160,180,80,180L0,180Z"></path></svg>
   <!-- Sessão com Portfólio -->
   <section id="sessao-portfolio" class="sessao-portfolio">
@@ -212,15 +229,14 @@
 					<ul class="social-icons">
             <a href="https://github.com/felipecarvalhobarr" target="_black"><i class="fab fa-github"></i></a> 
             <a href="https://www.linkedin.com/in/felipecarvbarr/" target="_black"><i class="fab fa-linkedin-in"></i></a> 
-            <a href="https://www.linkedin.com/in/felipecarvbarr/" target="_black"><i class="fas fa-envelope"></i></a> 
-            <a href="https://www.linkedin.com/in/felipecarvbarr/" target="_black"><i class="fab fa-instagram"></i></a> 
-            <a href="https://www.linkedin.com/in/felipecarvbarr/" target="_black"><i class="fab fa-whatsapp"></i></a> 
+            <a href="mailto:felipecarvalhobarr@gmail.com" target="_black"><i class="fas fa-envelope"></i></a> 
+            <a href="https://api.whatsapp.com/send?phone=5521983288139" target="_black"><i class="fab fa-whatsapp"></i></a> 
           </ul>
           <p class="copyright">Copyright &copy;2021</p>
 		  </div>
 	</footer>
 	<!-- Fim do rodapé-->
   <!-- Linkando o index.html ao java script | script.js -->
-  <script type="text/javascript" src="resources/js/script.js"></script>
+  <script src="resources/js/script.js"></script>
 </body>
 </html>
