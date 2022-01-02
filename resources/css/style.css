@@ -339,6 +339,12 @@ da borda redonda envolta dos icones sociais  */
   object-fit: cover;
 }
 
+/* Ajustando tamanho para o icone SVG da internet (link externo para aplicação) */
+.icone-browser {
+  height: 20px;
+  width: 20px;
+}
+
 /* Configurando a sessao-skills */
 .sessao-skills {
   background-color: #0024A4;
