@@ -9,6 +9,11 @@
   padding: 0;
 }
 
+html {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
 /* Configurações gerais para todas as tags do body */
 body {
   font-family: 'Quicksand', sans-serif;
@@ -218,6 +223,7 @@ da borda redonda envolta dos icones sociais  */
 
 .seta-svg:hover {
   transform: scale(1.2);
+  transition: 300ms;
   color: silver;
 }
 
@@ -543,6 +549,7 @@ da borda redonda envolta dos icones sociais  */
 
 #btn-top:hover {
   transform: scale(1.2);
+  transition: 150ms;
 }
 
 button .fa-arrow-up {
@@ -600,7 +607,7 @@ button .fa-arrow-up {
   /* Ação inicial da animação */
   from {
     opacity: 0;
-    transform: scale(0.9);
+    transform: scale(0.5);
   }
   /* Ação final da animação */
   to {
@@ -610,12 +617,52 @@ button .fa-arrow-up {
 }
 
 /* Aparição do form suavemente */
-body {
+.perfil {
   /* Aplicando a animação fade | Tempo de execução da animação */
   animation: fade 1.2s;
 }
 
+/* Criando animação: De movimento com aparição suave */
+@keyframes movendo{
+    from {
+        /* Definindo opacidade em 0 para sumir a div */  
+        opacity: 0;
+        /* Aplicando um movimento no eixo X na oposição inicial de -40% */
+        transform: translateX(-50%);
+    }
 
+    to {
+         /* Definindo opacidade em 1 para surgir a div */  
+        opacity: 1;
+        /* Aplicando um movimento no eixo X indo para posição 0 (posição original) */
+        transform: translateX(0);
+    }
+}
+
+ .header-texto {
+  /* Aplicando a animação de movimento */
+  animation: movendo 1000ms 200ms backwards;
+}
+
+@keyframes movendoCima{
+  from {
+      /* Definindo opacidade em 0 para sumir a div */  
+      opacity: 0;
+      /* Aplicando um movimento no eixo X na oposição inicial de -40% */
+      transform: translateY(80%);
+  }
+
+  to {
+       /* Definindo opacidade em 1 para surgir a div */  
+      opacity: 1;
+      /* Aplicando um movimento no eixo X indo para posição 0 (posição original) */
+      transform: translateY(0);
+  }
+}
+
+.seta-svg {
+  animation: movendoCima 800ms 300ms backwards;
+}
 
 
 /* ----------------------------- Criando responsividade do site: -----------------------------
