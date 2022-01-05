@@ -545,6 +545,7 @@ da borda redonda envolta dos icones sociais  */
   bottom: 14px;
   right: 22px;
   z-index: 3;
+  display: none;
 }
 
 #btn-top:hover {
@@ -661,7 +662,7 @@ button .fa-arrow-up {
 }
 
 .seta-svg {
-  animation: movendoCima 800ms 300ms backwards;
+  animation: movendoCima 900ms 450ms backwards;
 }
 
 
