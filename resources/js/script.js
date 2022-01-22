@@ -1,8 +1,8 @@
 // Função para o ativar o menu hamburguer ao clickar 
 function onClickMenu(){
-    document.getElementById("menu").classList.toggle("change");
-    document.getElementById("nav").classList.toggle("change");
-    document.getElementById("menu-bg").classList.toggle("change-bg");
+  document.getElementById("hambuguer").classList.toggle("change");
+  document.getElementById("menu").classList.toggle("change");
+  document.getElementById("menu-bg").classList.toggle("change-bg");
 }
 
 // Constante para o selector .btnMenu
@@ -13,26 +13,26 @@ const btnMenu4 = document.querySelector('.btnMenu4')
 
 // Evento para fechar o menu após o click nos botões
 btnMenu1.addEventListener('click', function() {
+  document.getElementById("hambuguer").classList.toggle("change");
   document.getElementById("menu").classList.toggle("change");
-  document.getElementById("nav").classList.toggle("change");
   document.getElementById("menu-bg").classList.toggle("change-bg");
 })
 
 btnMenu2.addEventListener('click', function() {
+  document.getElementById("hambuguer").classList.toggle("change");
   document.getElementById("menu").classList.toggle("change");
-  document.getElementById("nav").classList.toggle("change");
   document.getElementById("menu-bg").classList.toggle("change-bg");
 })
 
 btnMenu3.addEventListener('click', function() {
+  document.getElementById("hambuguer").classList.toggle("change");
   document.getElementById("menu").classList.toggle("change");
-  document.getElementById("nav").classList.toggle("change");
   document.getElementById("menu-bg").classList.toggle("change-bg");
 })
 
 btnMenu4.addEventListener('click', function() {
+  document.getElementById("hambuguer").classList.toggle("change");
   document.getElementById("menu").classList.toggle("change");
-  document.getElementById("nav").classList.toggle("change");
   document.getElementById("menu-bg").classList.toggle("change-bg");
 })
 
