@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <title>Portfólio TI - Carlos Felipe</title>
   <!-- Metas para otimizar a página com o Navegado e SEO -->
-  <meta name="keywords" content="Portfólio, Desenvolvimento, Programação, Currículo, CV, TI" />
-  <meta name="description" content="Site expositivo, contendo meu CV , e todo o meu portfólio TI com alguns projetos e um pouco mais de quem sou. | Clique e leia mais!" />
-  <meta name = "author" content = "Carlos Felipe Barreto" />
+  <meta name="keywords" content="Portfólio, CV, Currículo, Desenvolvimento, Programação, TI"/>
+  <meta name="description"
+    content="Site portfólio, contendo meu CV e o meu desenvolvimento em TI. Alguns projetos meus e informações sobre quem sou | Clique e acesse!" />
+  <meta name="author" content="Carlos Felipe Barreto" />
   <meta charset="UTF-8">
   <!--Importando FavIcon do site -->
   <link rel="shortcut icon" href="resources/img/favicon.ico" />
@@ -16,9 +18,10 @@
   <!-- Importando icones do font Awesome para o projeto -->
   <script src="https://kit.fontawesome.com/3b7e70bcc5.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
   <!-- Construido header da página coom apresentação e links para contato-->
-  <header>	
+  <header>
     <!-- Construido o menu do site -->
     <nav>
       <div id="hambuguer" onclick="onClickMenu()">
@@ -30,40 +33,89 @@
         <li><a class="btnMenu1" href="#sessao-info">Sobre mim</a></li>
         <li><a class="btnMenu2" href="#sessao-portfolio">Portfólio</a></li>
         <li><a class="btnMenu3" href="#sessao-skills">Skills</a></li>
-        <li><a class="btnMenu4" href="https://drive.google.com/file/d/1oFCzbs34I2cc-o9uHt90KhHy88AVMEqB/view?usp=sharing">Currículo</a></li>
+        <li><a class="btnMenu4"
+            href="https://drive.google.com/file/d/1oFCzbs34I2cc-o9uHt90KhHy88AVMEqB/view?usp=sharing">Currículo</a></li>
       </ul>
-  </nav>
+    </nav>
     <div class="menu-bg" id="menu-bg"></div>
     <!-- Header -->
     <div class="perfil">
-      <img  class="foto-perfil" src="resources/img/Minha-foto.jpg" alt="Felipe Barreto" />
+      <img class="foto-perfil" src="resources/img/Minha-foto.jpg" alt="Felipe Barreto" />
     </div>
     <div class="header-texto">
       <h1>Oi, eu sou Felipe! &#128075;</h1>
       <p>Conheça mais sobre mim e os meus projetos:</p>
-      <hr/>
+      <hr />
       <ul class="social-icons">
-        <a href="https://github.com/felipecarvalhobarr" target="_black" rel='external nofollow'><i class="fab fa-github"></i></a> 
-        <a href="https://www.linkedin.com/in/felipecarvbarr/" target="_black" rel='external nofollow'><i class="fab fa-linkedin-in"></i></a> 
-        <a href="mailto:felipecarvalhobarr@gmail.com" target="_black" rel='external nofollow'><i class="fas fa-envelope"></i></a> 
-        <a href="https://api.whatsapp.com/send?phone=5521983288139" target="_black" rel='external nofollow'><i class="fab fa-whatsapp"></i></a> 
+        <a href="https://github.com/felipecarvalhobarr" target="_black" rel='external nofollow'><i
+            class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/felipecarvbarr/" target="_black" rel='external nofollow'><i
+            class="fab fa-linkedin-in"></i></a>
+        <a href="mailto:felipecarvalhobarr@gmail.com" target="_black" rel='external nofollow'><i
+            class="fas fa-envelope"></i></a>
+        <a href="https://api.whatsapp.com/send?phone=5521983288139" target="_black" rel='external nofollow'><i
+            class="fab fa-whatsapp"></i></a>
       </ul>
     </div>
-    <a class="seta-svg" href="#sessao-info"><i class="fas fa-arrow-alt-circle-down"></i></a> 
+    <a class="seta-svg" href="#sessao-info"><i class="fas fa-arrow-alt-circle-down"></i></a>
   </header>
   <!-- SVG de onda -->
-  <svg class="recorte" id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 240" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(0, 36, 164, 1)" offset="0%"></stop><stop stop-color="rgba(0, 0, 0, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,120L80,108C160,96,320,72,480,88C640,104,800,160,960,168C1120,176,1280,136,1440,128C1600,120,1760,144,1920,152C2080,160,2240,152,2400,132C2560,112,2720,80,2880,80C3040,80,3200,112,3360,112C3520,112,3680,80,3840,64C4000,48,4160,48,4320,44C4480,40,4640,32,4800,40C4960,48,5120,72,5280,88C5440,104,5600,112,5760,132C5920,152,6080,184,6240,180C6400,176,6560,136,6720,124C6880,112,7040,128,7200,124C7360,120,7520,96,7680,76C7840,56,8000,40,8160,52C8320,64,8480,104,8640,124C8800,144,8960,144,9120,156C9280,168,9440,192,9600,172C9760,152,9920,88,10080,52C10240,16,10400,8,10560,40C10720,72,10880,144,11040,168C11200,192,11360,168,11440,156L11520,144L11520,240L11440,240C11360,240,11200,240,11040,240C10880,240,10720,240,10560,240C10400,240,10240,240,10080,240C9920,240,9760,240,9600,240C9440,240,9280,240,9120,240C8960,240,8800,240,8640,240C8480,240,8320,240,8160,240C8000,240,7840,240,7680,240C7520,240,7360,240,7200,240C7040,240,6880,240,6720,240C6560,240,6400,240,6240,240C6080,240,5920,240,5760,240C5600,240,5440,240,5280,240C5120,240,4960,240,4800,240C4640,240,4480,240,4320,240C4160,240,4000,240,3840,240C3680,240,3520,240,3360,240C3200,240,3040,240,2880,240C2720,240,2560,240,2400,240C2240,240,2080,240,1920,240C1760,240,1600,240,1440,240C1280,240,1120,240,960,240C800,240,640,240,480,240C320,240,160,240,80,240L0,240Z"></path><defs><linearGradient id="sw-gradient-1" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(0, 36, 164, 1)" offset="0%"></stop><stop stop-color="rgba(0, 36, 164, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 50px); opacity:0.9" fill="url(#sw-gradient-1)" d="M0,120L80,132C160,144,320,168,480,172C640,176,800,160,960,136C1120,112,1280,80,1440,56C1600,32,1760,16,1920,20C2080,24,2240,48,2400,76C2560,104,2720,136,2880,124C3040,112,3200,56,3360,48C3520,40,3680,80,3840,112C4000,144,4160,168,4320,148C4480,128,4640,64,4800,40C4960,16,5120,32,5280,32C5440,32,5600,16,5760,36C5920,56,6080,112,6240,140C6400,168,6560,168,6720,140C6880,112,7040,56,7200,52C7360,48,7520,96,7680,100C7840,104,8000,64,8160,68C8320,72,8480,120,8640,116C8800,112,8960,56,9120,60C9280,64,9440,128,9600,140C9760,152,9920,112,10080,100C10240,88,10400,104,10560,92C10720,80,10880,40,11040,24C11200,8,11360,16,11440,20L11520,24L11520,240L11440,240C11360,240,11200,240,11040,240C10880,240,10720,240,10560,240C10400,240,10240,240,10080,240C9920,240,9760,240,9600,240C9440,240,9280,240,9120,240C8960,240,8800,240,8640,240C8480,240,8320,240,8160,240C8000,240,7840,240,7680,240C7520,240,7360,240,7200,240C7040,240,6880,240,6720,240C6560,240,6400,240,6240,240C6080,240,5920,240,5760,240C5600,240,5440,240,5280,240C5120,240,4960,240,4800,240C4640,240,4480,240,4320,240C4160,240,4000,240,3840,240C3680,240,3520,240,3360,240C3200,240,3040,240,2880,240C2720,240,2560,240,2400,240C2240,240,2080,240,1920,240C1760,240,1600,240,1440,240C1280,240,1120,240,960,240C800,240,640,240,480,240C320,240,160,240,80,240L0,240Z"></path></svg>
+  <svg class="recorte" id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 240" version="1.1"
+    xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+        <stop stop-color="rgba(0, 36, 164, 1)" offset="0%"></stop>
+        <stop stop-color="rgba(0, 0, 0, 1)" offset="100%"></stop>
+      </linearGradient>
+    </defs>
+    <path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)"
+      d="M0,120L80,108C160,96,320,72,480,88C640,104,800,160,960,168C1120,176,1280,136,1440,128C1600,120,1760,144,1920,152C2080,160,2240,152,2400,132C2560,112,2720,80,2880,80C3040,80,3200,112,3360,112C3520,112,3680,80,3840,64C4000,48,4160,48,4320,44C4480,40,4640,32,4800,40C4960,48,5120,72,5280,88C5440,104,5600,112,5760,132C5920,152,6080,184,6240,180C6400,176,6560,136,6720,124C6880,112,7040,128,7200,124C7360,120,7520,96,7680,76C7840,56,8000,40,8160,52C8320,64,8480,104,8640,124C8800,144,8960,144,9120,156C9280,168,9440,192,9600,172C9760,152,9920,88,10080,52C10240,16,10400,8,10560,40C10720,72,10880,144,11040,168C11200,192,11360,168,11440,156L11520,144L11520,240L11440,240C11360,240,11200,240,11040,240C10880,240,10720,240,10560,240C10400,240,10240,240,10080,240C9920,240,9760,240,9600,240C9440,240,9280,240,9120,240C8960,240,8800,240,8640,240C8480,240,8320,240,8160,240C8000,240,7840,240,7680,240C7520,240,7360,240,7200,240C7040,240,6880,240,6720,240C6560,240,6400,240,6240,240C6080,240,5920,240,5760,240C5600,240,5440,240,5280,240C5120,240,4960,240,4800,240C4640,240,4480,240,4320,240C4160,240,4000,240,3840,240C3680,240,3520,240,3360,240C3200,240,3040,240,2880,240C2720,240,2560,240,2400,240C2240,240,2080,240,1920,240C1760,240,1600,240,1440,240C1280,240,1120,240,960,240C800,240,640,240,480,240C320,240,160,240,80,240L0,240Z">
+    </path>
+    <defs>
+      <linearGradient id="sw-gradient-1" x1="0" x2="0" y1="1" y2="0">
+        <stop stop-color="rgba(0, 36, 164, 1)" offset="0%"></stop>
+        <stop stop-color="rgba(0, 36, 164, 1)" offset="100%"></stop>
+      </linearGradient>
+    </defs>
+    <path style="transform:translate(0, 50px); opacity:0.9" fill="url(#sw-gradient-1)"
+      d="M0,120L80,132C160,144,320,168,480,172C640,176,800,160,960,136C1120,112,1280,80,1440,56C1600,32,1760,16,1920,20C2080,24,2240,48,2400,76C2560,104,2720,136,2880,124C3040,112,3200,56,3360,48C3520,40,3680,80,3840,112C4000,144,4160,168,4320,148C4480,128,4640,64,4800,40C4960,16,5120,32,5280,32C5440,32,5600,16,5760,36C5920,56,6080,112,6240,140C6400,168,6560,168,6720,140C6880,112,7040,56,7200,52C7360,48,7520,96,7680,100C7840,104,8000,64,8160,68C8320,72,8480,120,8640,116C8800,112,8960,56,9120,60C9280,64,9440,128,9600,140C9760,152,9920,112,10080,100C10240,88,10400,104,10560,92C10720,80,10880,40,11040,24C11200,8,11360,16,11440,20L11520,24L11520,240L11440,240C11360,240,11200,240,11040,240C10880,240,10720,240,10560,240C10400,240,10240,240,10080,240C9920,240,9760,240,9600,240C9440,240,9280,240,9120,240C8960,240,8800,240,8640,240C8480,240,8320,240,8160,240C8000,240,7840,240,7680,240C7520,240,7360,240,7200,240C7040,240,6880,240,6720,240C6560,240,6400,240,6240,240C6080,240,5920,240,5760,240C5600,240,5440,240,5280,240C5120,240,4960,240,4800,240C4640,240,4480,240,4320,240C4160,240,4000,240,3840,240C3680,240,3520,240,3360,240C3200,240,3040,240,2880,240C2720,240,2560,240,2400,240C2240,240,2080,240,1920,240C1760,240,1600,240,1440,240C1280,240,1120,240,960,240C800,240,640,240,480,240C320,240,160,240,80,240L0,240Z">
+    </path>
+  </svg>
   <!-- Sessão com informações sobre mim -->
   <section id="sessao-info" class="sessao-info">
     <br>
     <h2>Tecnologia é uma antiga paixão</h2>
     <br>
-    <p>Desde a minha infância sou vidrado em eletrônicos, a hora de jogar ou mexer no PC era um dos melhores momentos do meu dia. Graças ao vídeo-game pude me divertir e conhencer muitas pessoas!<br><br>Me lembro de quando ganhei o primeiro computador: a sensação de liberdade de instalar, desinstalar e personalizar o SO como eu queria, caso algo desse errado era só formatar a maquina e tudo estaria novo; essa era uma das melhores sensações | No PC nada se perde a não ser que se queime.</p>
+    <p>Desde a minha infância sou vidrado em eletrônicos, a hora de jogar ou mexer no PC era um dos melhores momentos do
+      meu dia. Graças ao vídeo-game pude me divertir e conhencer muitas pessoas!<br><br>Me lembro de quando ganhei o
+      primeiro computador: a sensação de liberdade de instalar, desinstalar e personalizar o SO como eu queria, caso
+      algo desse errado era só formatar a maquina e tudo estaria novo; essa era uma das melhores sensações | No PC nada
+      se perde a não ser que se queime.</p>
     <br>
     <div id="chart_div"></div>
   </section>
   <!-- SVG para dar efeito de recorte -->
-  <svg class="recorte-2" id="wave" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 180" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(0, 36, 164, 1)" offset="0%"></stop><stop stop-color="rgba(0, 0, 0, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,144L80,141C160,138,320,132,480,117C640,102,800,78,960,63C1120,48,1280,42,1440,33C1600,24,1760,12,1920,18C2080,24,2240,48,2400,75C2560,102,2720,132,2880,141C3040,150,3200,138,3360,120C3520,102,3680,78,3840,66C4000,54,4160,54,4320,48C4480,42,4640,30,4800,21C4960,12,5120,6,5280,30C5440,54,5600,108,5760,135C5920,162,6080,162,6240,147C6400,132,6560,102,6720,84C6880,66,7040,60,7200,69C7360,78,7520,102,7680,120C7840,138,8000,150,8160,150C8320,150,8480,138,8640,114C8800,90,8960,54,9120,33C9280,12,9440,6,9600,21C9760,36,9920,72,10080,99C10240,126,10400,144,10560,144C10720,144,10880,126,11040,123C11200,120,11360,132,11440,138L11520,144L11520,180L11440,180C11360,180,11200,180,11040,180C10880,180,10720,180,10560,180C10400,180,10240,180,10080,180C9920,180,9760,180,9600,180C9440,180,9280,180,9120,180C8960,180,8800,180,8640,180C8480,180,8320,180,8160,180C8000,180,7840,180,7680,180C7520,180,7360,180,7200,180C7040,180,6880,180,6720,180C6560,180,6400,180,6240,180C6080,180,5920,180,5760,180C5600,180,5440,180,5280,180C5120,180,4960,180,4800,180C4640,180,4480,180,4320,180C4160,180,4000,180,3840,180C3680,180,3520,180,3360,180C3200,180,3040,180,2880,180C2720,180,2560,180,2400,180C2240,180,2080,180,1920,180C1760,180,1600,180,1440,180C1280,180,1120,180,960,180C800,180,640,180,480,180C320,180,160,180,80,180L0,180Z"></path><defs><linearGradient id="sw-gradient-1" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(0, 36, 164, 1)" offset="0%"></stop><stop stop-color="rgba(0, 0, 0, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 50px); opacity:0.9" fill="url(#sw-gradient-1)" d="M0,36L80,54C160,72,320,108,480,105C640,102,800,60,960,39C1120,18,1280,18,1440,36C1600,54,1760,90,1920,105C2080,120,2240,114,2400,105C2560,96,2720,84,2880,72C3040,60,3200,48,3360,63C3520,78,3680,120,3840,126C4000,132,4160,102,4320,75C4480,48,4640,24,4800,33C4960,42,5120,84,5280,93C5440,102,5600,78,5760,78C5920,78,6080,102,6240,120C6400,138,6560,150,6720,153C6880,156,7040,150,7200,135C7360,120,7520,96,7680,96C7840,96,8000,120,8160,114C8320,108,8480,72,8640,63C8800,54,8960,72,9120,90C9280,108,9440,126,9600,135C9760,144,9920,144,10080,129C10240,114,10400,84,10560,60C10720,36,10880,18,11040,30C11200,42,11360,84,11440,105L11520,126L11520,180L11440,180C11360,180,11200,180,11040,180C10880,180,10720,180,10560,180C10400,180,10240,180,10080,180C9920,180,9760,180,9600,180C9440,180,9280,180,9120,180C8960,180,8800,180,8640,180C8480,180,8320,180,8160,180C8000,180,7840,180,7680,180C7520,180,7360,180,7200,180C7040,180,6880,180,6720,180C6560,180,6400,180,6240,180C6080,180,5920,180,5760,180C5600,180,5440,180,5280,180C5120,180,4960,180,4800,180C4640,180,4480,180,4320,180C4160,180,4000,180,3840,180C3680,180,3520,180,3360,180C3200,180,3040,180,2880,180C2720,180,2560,180,2400,180C2240,180,2080,180,1920,180C1760,180,1600,180,1440,180C1280,180,1120,180,960,180C800,180,640,180,480,180C320,180,160,180,80,180L0,180Z"></path></svg>
+  <svg class="recorte-2" id="wave" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 180"
+    version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+        <stop stop-color="rgba(0, 36, 164, 1)" offset="0%"></stop>
+        <stop stop-color="rgba(0, 0, 0, 1)" offset="100%"></stop>
+      </linearGradient>
+    </defs>
+    <path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)"
+      d="M0,144L80,141C160,138,320,132,480,117C640,102,800,78,960,63C1120,48,1280,42,1440,33C1600,24,1760,12,1920,18C2080,24,2240,48,2400,75C2560,102,2720,132,2880,141C3040,150,3200,138,3360,120C3520,102,3680,78,3840,66C4000,54,4160,54,4320,48C4480,42,4640,30,4800,21C4960,12,5120,6,5280,30C5440,54,5600,108,5760,135C5920,162,6080,162,6240,147C6400,132,6560,102,6720,84C6880,66,7040,60,7200,69C7360,78,7520,102,7680,120C7840,138,8000,150,8160,150C8320,150,8480,138,8640,114C8800,90,8960,54,9120,33C9280,12,9440,6,9600,21C9760,36,9920,72,10080,99C10240,126,10400,144,10560,144C10720,144,10880,126,11040,123C11200,120,11360,132,11440,138L11520,144L11520,180L11440,180C11360,180,11200,180,11040,180C10880,180,10720,180,10560,180C10400,180,10240,180,10080,180C9920,180,9760,180,9600,180C9440,180,9280,180,9120,180C8960,180,8800,180,8640,180C8480,180,8320,180,8160,180C8000,180,7840,180,7680,180C7520,180,7360,180,7200,180C7040,180,6880,180,6720,180C6560,180,6400,180,6240,180C6080,180,5920,180,5760,180C5600,180,5440,180,5280,180C5120,180,4960,180,4800,180C4640,180,4480,180,4320,180C4160,180,4000,180,3840,180C3680,180,3520,180,3360,180C3200,180,3040,180,2880,180C2720,180,2560,180,2400,180C2240,180,2080,180,1920,180C1760,180,1600,180,1440,180C1280,180,1120,180,960,180C800,180,640,180,480,180C320,180,160,180,80,180L0,180Z">
+    </path>
+    <defs>
+      <linearGradient id="sw-gradient-1" x1="0" x2="0" y1="1" y2="0">
+        <stop stop-color="rgba(0, 36, 164, 1)" offset="0%"></stop>
+        <stop stop-color="rgba(0, 0, 0, 1)" offset="100%"></stop>
+      </linearGradient>
+    </defs>
+    <path style="transform:translate(0, 50px); opacity:0.9" fill="url(#sw-gradient-1)"
+      d="M0,36L80,54C160,72,320,108,480,105C640,102,800,60,960,39C1120,18,1280,18,1440,36C1600,54,1760,90,1920,105C2080,120,2240,114,2400,105C2560,96,2720,84,2880,72C3040,60,3200,48,3360,63C3520,78,3680,120,3840,126C4000,132,4160,102,4320,75C4480,48,4640,24,4800,33C4960,42,5120,84,5280,93C5440,102,5600,78,5760,78C5920,78,6080,102,6240,120C6400,138,6560,150,6720,153C6880,156,7040,150,7200,135C7360,120,7520,96,7680,96C7840,96,8000,120,8160,114C8320,108,8480,72,8640,63C8800,54,8960,72,9120,90C9280,108,9440,126,9600,135C9760,144,9920,144,10080,129C10240,114,10400,84,10560,60C10720,36,10880,18,11040,30C11200,42,11360,84,11440,105L11520,126L11520,180L11440,180C11360,180,11200,180,11040,180C10880,180,10720,180,10560,180C10400,180,10240,180,10080,180C9920,180,9760,180,9600,180C9440,180,9280,180,9120,180C8960,180,8800,180,8640,180C8480,180,8320,180,8160,180C8000,180,7840,180,7680,180C7520,180,7360,180,7200,180C7040,180,6880,180,6720,180C6560,180,6400,180,6240,180C6080,180,5920,180,5760,180C5600,180,5440,180,5280,180C5120,180,4960,180,4800,180C4640,180,4480,180,4320,180C4160,180,4000,180,3840,180C3680,180,3520,180,3360,180C3200,180,3040,180,2880,180C2720,180,2560,180,2400,180C2240,180,2080,180,1920,180C1760,180,1600,180,1440,180C1280,180,1120,180,960,180C800,180,640,180,480,180C320,180,160,180,80,180L0,180Z">
+    </path>
+  </svg>
   <!-- Sessão com Portfólio -->
   <section id="sessao-portfolio" class="sessao-portfolio">
     <h2 class="titulo-portfolio">Portfólio Dev.</h2>
@@ -74,57 +126,66 @@
         <br>
         <h2>Localiza Descarte</h2>
         <p>Aplicação Back-end | Projeto em grupo para<br>conclusão do Start Latam</p>
-        <a href="https://github.com/localiza-descarte/Aplicacao-LocalizaDescarte" target="_black" rel='external nofollow'><i class="fab fa-github"></i></a> 
+        <a href="https://github.com/localiza-descarte/Aplicacao-LocalizaDescarte" target="_black"
+          rel='external nofollow'><i class="fab fa-github"></i></a>
         <div class="imagem-container">
-            <img class="imagem-galeria" src="resources/img/projetos/LocalizaDescarte.jpg" alt="Localiza Descarte">
-          </div>
+          <img class="imagem-galeria" src="resources/img/projetos/LocalizaDescarte.jpg" alt="Localiza Descarte">
+        </div>
       </div>
       <div class="projeto">
         <br>
         <h2>Calculadora Simples</h2>
         <p>Aplicação Back-end | Utilizando: Java<br>para estudos</p>
-        <a href="https://github.com/felipecarvalhobarr/estudos-de-programacao/blob/main/Java/Exerc%C3%ADcios/exercicio9_Calculadora.java" target="_black" rel='external nofollow'><i class="fab fa-github"></i></a> 
+        <a href="https://github.com/felipecarvalhobarr/estudos-de-programacao/blob/main/Java/Exerc%C3%ADcios/exercicio9_Calculadora.java"
+          target="_black" rel='external nofollow'><i class="fab fa-github"></i></a>
         <div class="imagem-container">
-            <img  class="imagem-galeria" src="resources/img/projetos/calculadora.jpg" alt="Calculadora">
-          </div>
+          <img class="imagem-galeria" src="resources/img/projetos/calculadora.jpg" alt="Calculadora">
+        </div>
       </div>
       <div class="projeto">
         <br>
         <h2>Calculadora de Comissão</h2>
         <p>Aplicação Back-end | Utilizando: Java<br>para estudos</p>
-        <a href="https://github.com/felipecarvalhobarr/estudos-de-programacao/blob/main/Java/Exerc%C3%ADcios/exercicio5_caluladoraDeComissao.java" target="_black" rel='external nofollow'><i class="fab fa-github"></i></a> 
+        <a href="https://github.com/felipecarvalhobarr/estudos-de-programacao/blob/main/Java/Exerc%C3%ADcios/exercicio5_caluladoraDeComissao.java"
+          target="_black" rel='external nofollow'><i class="fab fa-github"></i></a>
         <div class="imagem-container">
-            <img  class="imagem-galeria" src="resources/img/projetos/calculadoraDeComissao.jpg" alt="Calculadora de Comissão">
-          </div>
+          <img class="imagem-galeria" src="resources/img/projetos/calculadoraDeComissao.jpg"
+            alt="Calculadora de Comissão">
+        </div>
       </div>
       <div class="projeto">
         <br>
         <h2>O primeiro é o maior?</h2>
         <p>Aplicação Back-end | Utilizando: Java<br>para estudos</p>
-        <a href="https://github.com/felipecarvalhobarr/estudos-de-programacao/blob/main/Java/Exerc%C3%ADcios/exercicio8_O1numeroEMaior.java" target="_black" rel='external nofollow'><i class="fab fa-github"></i></a> 
+        <a href="https://github.com/felipecarvalhobarr/estudos-de-programacao/blob/main/Java/Exerc%C3%ADcios/exercicio8_O1numeroEMaior.java"
+          target="_black" rel='external nofollow'><i class="fab fa-github"></i></a>
         <div class="imagem-container">
-            <img  class="imagem-galeria" src="resources/img/projetos/Oprimeiroéomaior.jpg" alt="O primeiro é o maior?">
-          </div>
+          <img class="imagem-galeria" src="resources/img/projetos/Oprimeiroéomaior.jpg" alt="O primeiro é o maior?">
+        </div>
       </div>
       <div class="projeto">
         <br>
         <h2>Churrascometro</h2>
         <p>Aplicação Front-end | Utilizando: HTML, CSS e JS<br>para estudos</p>
-        <a href="https://github.com/HyagoNascimento/Churrascometro" target="_black" rel='external nofollow'><i class="fab fa-github"></i></a> 
-        <a href="https://meuchurrasco.site" target="_black" rel='external nofollow'><img class="icone-browser" src="resources/img/Internet.svg" alt="Icone do Browser"></a> 
+        <a href="https://github.com/HyagoNascimento/Churrascometro" target="_black" rel='external nofollow'><i
+            class="fab fa-github"></i></a>
+        <a href="https://meuchurrasco.site" target="_black" rel='external nofollow'><img class="icone-browser"
+            src="resources/img/Internet.svg" alt="Icone do Browser"></a>
         <div class="imagem-container">
-            <img  class="imagem-galeria" src="resources/img/projetos/Churrascometro.jpg" alt="Churrascometro">
-          </div>
+          <img class="imagem-galeria" src="resources/img/projetos/Churrascometro.jpg" alt="Churrascometro">
+        </div>
       </div>
       <div class="projeto">
         <br>
         <h2>Calculadora JS</h2>
         <p>Aplicação Front-end | Utilizando: HTML, CSS e JS<br>para estudos</p>
-        <a href="https://github.com/felipecarvalhobarr/Calculadora-JS" target="_black" rel='external nofollow'><i class="fab fa-github"></i></a> 
-        <a href="https://felipecarvalhobarr.github.io/Calculadora-JS/" target="_black" rel='external nofollow'><img class="icone-browser" src="resources/img/Internet.svg" alt="Icone do Browser"></a> 
+        <a href="https://github.com/felipecarvalhobarr/Calculadora-JS" target="_black" rel='external nofollow'><i
+            class="fab fa-github"></i></a>
+        <a href="https://felipecarvalhobarr.github.io/Calculadora-JS/" target="_black" rel='external nofollow'><img
+            class="icone-browser" src="resources/img/Internet.svg" alt="Icone do Browser"></a>
         <div class="imagem-container">
-            <img class="imagem-galeria" src="resources/img/projetos/calculadoraJS.jpg" alt="Calculadora JS">
-          </div>
+          <img class="imagem-galeria" src="resources/img/projetos/calculadoraJS.jpg" alt="Calculadora JS">
+        </div>
       </div>
     </div>
     <br><br>
@@ -139,12 +200,12 @@
           <br>
           <p>Habilidades principais</p>
           <div class="icones-tech">
-            <a><i class="fab fa-java"></i></a> 
-            <a><i class="fab fa-html5"></i></a> 
+            <a><i class="fab fa-java"></i></a>
+            <a><i class="fab fa-html5"></i></a>
             <a><i class="fab fa-css3-alt"></i></a>
-            <a><i class="fab fa-js-square"></i></a>  
-            <a><img class="spring-logo" src="resources/img/logos/springio-icon.svg" alt="Spring Boot"></a> 
-            <a><img class="mysql-logo" src="resources/img/logos/mysql.svg" alt="MySQL"></a>    
+            <a><i class="fab fa-js-square"></i></a>
+            <a><img class="spring-logo" src="resources/img/logos/springio-icon.svg" alt="Spring Boot"></a>
+            <a><img class="mysql-logo" src="resources/img/logos/mysql.svg" alt="MySQL"></a>
           </div>
         </div>
       </div>
@@ -157,7 +218,8 @@
               <br>
               <P>Sistemas de computação</p>
               <p>Universidade Federal Fluminense</p>
-              <a><img class="uff-logo" src="resources/img/logos/Universidade-Federal-Fluminense.svg" alt="Universidade Federal Fluminense"></a> 
+              <a><img class="uff-logo" src="resources/img/logos/Universidade-Federal-Fluminense.svg"
+                  alt="Universidade Federal Fluminense"></a>
             </div>
             <div class="tecnico-faetec">
               <br>
@@ -208,37 +270,45 @@
         <h2>Personalidade</h2>
         <br>
         <div class="card-personalidade">
-          <img class="img-personalidade" src="resources/img/Protagonist_ENFJ.svg" alt="Teste de personalidade" >
+          <img class="img-personalidade" src="resources/img/Protagonist_ENFJ.svg" alt="Teste de personalidade">
           <h2>Protagonista<br>(ENFJ)</h2>
           <br>
-          <p>“Um Protagonista (ENFJ) é uma pessoa com traços de personalidade extrovertidos, intuitivos, sentimentais<br> e julgadores. Esses tipos calorosos e francos adoram<br>ajudar os outros e tendem a ter ideias e valores fortes.<br> Eles apoiam sua perspectiva com a energia<br> criativa para atingir seus objetivos”.</p>
+          <p>“Um Protagonista (ENFJ) é uma pessoa com traços de personalidade extrovertidos, intuitivos,
+            sentimentais<br> e julgadores. Esses tipos calorosos e francos adoram<br>ajudar os outros e tendem a ter
+            ideias e valores fortes.<br> Eles apoiam sua perspectiva com a energia<br> criativa para atingir seus
+            objetivos”.</p>
         </div>
       </div>
     </div>
   </section>
   <button onclick="topFunction()" id="btn-top" title="Volte ao topo"><i class="fas fa-arrow-up"></i></button>
   <!-- Rodapé da página -->
-	<footer class="rodape">
-		<div class="rodape-container">
-					<ul class="info-rodape">
-						<li>Orgulhosamente desenvolvido por Carlos Felipe Barreto &#128153; </li>
-					</ul>
-			</div>
-    <br>
+  <footer class="rodape">
+    <div class="rodape-container">
+      <ul class="info-rodape">
+        <li>Orgulhosamente desenvolvido por Carlos Felipe Barreto &#128153; </li>
+      </ul>
+    </div>
+    <br />
     <!-- Linha divisória do Rodapé -->
-		<hr/>
-		<div class="rodape-direitos">
-					<ul class="social-icons">
-            <a href="https://github.com/felipecarvalhobarr" target="_black" rel='external nofollow'><i class="fab fa-github"></i></a> 
-            <a href="https://www.linkedin.com/in/felipecarvbarr/" target="_black" rel='external nofollow'><i class="fab fa-linkedin-in"></i></a> 
-            <a href="mailto:felipecarvalhobarr@gmail.com" target="_black" rel='external nofollow'><i class="fas fa-envelope"></i></a> 
-            <a href="https://api.whatsapp.com/send?phone=5521983288139" target="_black" rel='external nofollow'><i class="fab fa-whatsapp"></i></a> 
-          </ul>
-          <p class="copyright">Copyright &copy;2022</p>
-		  </div>
-	</footer>
-	<!-- Fim do rodapé-->
+    <hr />
+    <div class="rodape-direitos">
+      <ul class="social-icons">
+        <a href="https://github.com/felipecarvalhobarr" target="_black" rel='external nofollow'><i
+            class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/felipecarvbarr/" target="_black" rel='external nofollow'><i
+            class="fab fa-linkedin-in"></i></a>
+        <a href="mailto:felipecarvalhobarr@gmail.com" target="_black" rel='external nofollow'><i
+            class="fas fa-envelope"></i></a>
+        <a href="https://api.whatsapp.com/send?phone=5521983288139" target="_black" rel='external nofollow'><i
+            class="fab fa-whatsapp"></i></a>
+      </ul>
+      <p class="copyright">Copyright &copy;2022</p>
+    </div>
+  </footer>
+  <!-- Fim do rodapé-->
   <!-- Linkando o index.html ao java script | script.js -->
   <script src="resources/js/script.js"></script>
 </body>
+
 </html>
