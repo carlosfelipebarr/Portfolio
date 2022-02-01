@@ -132,6 +132,23 @@ color: white;
   margin-top: 2rem;
 }
 
+.outras-areas {
+  padding-top: 20px;
+  padding-bottom: 25px;
+}
+
+.menuHorizontal {
+  text-decoration: none;
+  padding: 10px 10px;
+  color: white;
+}
+
+.active, .menuHorizontal:hover {
+  color: #0024A4;
+  text-decoration: overline;
+  font-weight: bolder;
+}
+
 /* Definições das linhas divisoria  */
 hr {
 	width: 50%;
@@ -151,7 +168,7 @@ hr {
  /* Configurações da div responsável pela apresentação inicial do site, contendo as tag H1, p. com pocisionamento e alinhamento */
 .header-texto {
   text-align: center;
-  margin: 2rem 0 0 0;
+  margin: 1rem 0 0 0;
 }
 
 /* Configurando o H1, tamanho, espaçamento entre letras e cor */
@@ -164,10 +181,9 @@ h1 {
 	color: white;
 }
 
-/* Configurando a tag p, tamanho e cor */
-.header-texto p {
-  font-size: 20px;
+.header-texto h4 {
   color: white;
+  font-weight: 300;
 }
 
 /* Margem dos icones sociais | Alimento ao centro */
@@ -217,9 +233,20 @@ da borda redonda envolta dos icones sociais  */
 }
 
 .seta-svg:hover {
-  transform: scale(1.2);
+  -webkit-transform:scale(1.2); 
+  -moz-transform:scale(1.2); 
+  -o-transform:scale(1.2);
+  transform:scale(1.2);
   transition: 300ms;
   color: silver;
+}
+
+/* Configurando a tag p, tamanho e cor */
+header p {
+  padding-top: 12px;
+  font-size: 14px;
+  color: white;
+  text-align: center;
 }
 
 /* ------ Posição do SVG de onda para causar o efeito de recorte ---- */

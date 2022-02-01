@@ -55,3 +55,8 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+// Jquery para scroll-behavior: smooth / Rolagem suave
+$('html, body').animate({
+  scrollTop: 0
+}, 1500);
